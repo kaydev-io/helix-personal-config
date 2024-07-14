@@ -115,3 +115,13 @@ includeInlayParameterNameHints = "all"
 includeInlayParameterNameHintsWhenArgumentMatchesName = true
 includeInlayPropertyDeclarationTypeHints = true
 includeInlayVariableTypeHints = true
+
+
+[language-server.ruff]
+command = "ruff"
+args = ["server", "--preview"]
+
+[[language]]
+name = "python"
+language-servers = ["ruff", "pyright"]
+auto-format = true
